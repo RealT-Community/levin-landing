@@ -1,6 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 
+
+
 export default function SEO({
   description = 'defi + securities',
   author = 'Levinswap',
@@ -47,6 +49,7 @@ export default function SEO({
       {metaData.map(({ name, content }, i) => (
         <meta key={i} name={name} content={content} />
       ))}
+      <script id="mcjs" src="https://chimpstatic.com/mcjs-connected/js/users/e5219fbbe1fee0310f33d838b/c7e828feeb2408f68c99b5ce8.js" />
     </Head>
   );
 }
