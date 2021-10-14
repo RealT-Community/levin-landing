@@ -2,17 +2,17 @@ import React from 'react';
 import { Box, Container, Image, Heading } from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import bannerImage from 'assets/banner-mockup.png';
-import bannerIcon7 from 'assets/dot-pattern.svg';
+import dot from 'assets/dot-pattern.svg';
 
 const Banner = () => {
   return (
     <Box as="section" id="banner" sx={styles.banner}>
       <Container sx={styles.container}>
         <Image
-          sx={styles.bannerIcon7}
+          sx={styles.dot}
           className="bannerIcon"
           alt="banner icon"
-          src={bannerIcon7}
+          src={dot}
         />
         <Heading as="h2">Experience Traditional Finance with DeFi</Heading>
         <Image src={bannerImage} sx={styles.bannerImage} alt="banner moc" />
@@ -119,8 +119,9 @@ const styles = {
       display: ['none', null, null, null, 'block'],
     },
   },
-  bannerIcon7: {
-    bottom: '30%',
-    right: '0%',
+  dot: {
+    width: '400px',
+    height: '400px',
+    left: '35%',
   },
 };
