@@ -2,25 +2,25 @@ import React from 'react';
 import { Box, Container, Flex, Image, Text, Heading } from 'theme-ui';
 import JackpotCard from 'components/cards/jackpot-card';
 import jackpotImage from 'assets/jackpot.png';
-import jackpotImage1 from 'assets/jackpot-1-1.png';
-import jackpotImage2 from 'assets/jackpot-1-2.png';
+import image1 from 'assets/image-7.png';
+import image2 from 'assets/image-8.png';
 
 const JACKPOT_DATA = [
   {
-    image: jackpotImage1,
+    image: image1,
     text:
       'Compared to centralized services, there is no single point of failure. Making the ecosystem more robust.',
     heading: 'Asset Safety',
   },
   {
-    image: jackpotImage2,
+    image: image2,
     text:
       'No need to go through KYC multiple times, once is more than enough to start participating in Levin ecosystem.',
     heading: 'Universal Whitelisting',
   },
 ];
 
-const Jackpot = () => {
+const Core = () => {
   return (
     <Box as="section" sx={styles.jackpot}>
       <Container>
@@ -50,7 +50,7 @@ const Jackpot = () => {
   );
 };
 
-export default Jackpot;
+export default Core;
 
 const styles = {
   jackpot: {

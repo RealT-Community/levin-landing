@@ -2,8 +2,7 @@ import React from 'react';
 import { Box, Container, Flex, Text, Heading, Image } from 'theme-ui';
 import { Link } from 'components/link';
 
-import callImage from 'assets/callimage.png';
-import callImage2 from 'assets/dot-pattern.svg';
+import artboard from 'assets/artboard.png';
 
 const CallToAction = () => {
   return (
@@ -26,7 +25,7 @@ const CallToAction = () => {
             </Link>
           </Box>
           <Box sx={styles.images}>
-            <Image src={callImage} alt="call image" />
+            <Image src={artboard} alt="call image" />
           </Box>
         </Flex>
       </Container>

@@ -7,7 +7,7 @@ import SEO from 'components/seo';
 import Layout from 'components/layout';
 import Banner from 'sections/banner';
 import Services from 'sections/services';
-import Jackpot from 'sections/jackpot';
+import Core from 'sections/core';
 import CallToAction from 'sections/call-to-action';
 import Featured from 'sections/featured';
 import FAQ from 'sections/faq';
@@ -20,7 +20,7 @@ export default function IndexPage() {
           <SEO title="Levin" />
           <Banner />
           <Services />
-          <Jackpot />
+          <Core />
           <CallToAction />
           <Featured />
           <FAQ />
