@@ -10,26 +10,20 @@ import Services from 'sections/services';
 import Jackpot from 'sections/jackpot';
 import CallToAction from 'sections/call-to-action';
 import Featured from 'sections/featured';
-import Pricing from 'sections/pricing';
-import Blogs from 'sections/blogs';
 import FAQ from 'sections/faq';
-import Subscribe from 'sections/subscribe';
 
 export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Levinswap" />
+          <SEO title="Levin" />
           <Banner />
           <Services />
           <Jackpot />
           <CallToAction />
           <Featured />
-          <Pricing />
-          <Blogs />
           <FAQ />
-          <Subscribe />
         </Layout>
       </StickyProvider>
     </ThemeProvider>

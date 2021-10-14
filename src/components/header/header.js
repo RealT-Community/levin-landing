@@ -1,19 +1,25 @@
 /** @jsx jsx */
-import { jsx, Container, Flex } from 'theme-ui';
+import { jsx, Container, Flex, Text } from 'theme-ui';
 import { Link } from 'components/link';
 import { Link as ScrollLink } from 'react-scroll';
 import Logo from 'components/logo';
 import { DrawerProvider } from 'contexts/drawer/drawer.provider';
 import MobileDrawer from './mobileDrawer';
 import menuItems from './header.data';
-import logoDark from 'assets/logo-dark2.svg';
 
 export default function Header({ className }) {
   return (
     <DrawerProvider>
       <header sx={styles.header} className={className}>
         <Container sx={styles.container}>
-          <Logo image={logoDark}/>
+          <Text as="p"
+            sx={{
+              color: 'heading',
+              fontSize: '22px',
+              fontWeight: 'bold',
+            }}>
+            Levin
+            </Text>
 
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
@@ -49,18 +55,19 @@ export default function Header({ className }) {
 
 const styles = {
   headerBtn: {
-    backgroundColor: 'black',
+    backgroundColor: 'primary',
     fontSize: '16px',
     fontWeight: 'bold',
     letterSpacing: '-0.16px',
     borderRadius: '5px',
-    color: '#ffffff',
+    color: 'text_white',
     padding: '6.5px 24px',
     display: ['none', null, null, null, 'inline-block'],
     ml: ['0', null, null, 'auto', '0'],
     mr: ['0', null, null, '20px', '0'],
+      transition: '0.3s',
     '&:hover': {
-      color: '#fff',
+      opacity: '0.8',
     },
   },
   header: {

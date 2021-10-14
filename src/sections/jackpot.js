@@ -31,7 +31,7 @@ const Jackpot = () => {
           <Box sx={styles.content}>
             <Box sx={styles.heading}>
               <Text as="span">Core features</Text>
-              <Heading as="h3">Securitizing DeFi</Heading>
+              <Heading as="h3">What Makes Levin Ecosystem Robust?</Heading>
             </Box>
             <Box sx={styles.jackpotCardBox}>
               {JACKPOT_DATA.map(({ image, heading, text }, index) => (

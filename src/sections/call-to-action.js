@@ -39,7 +39,7 @@ export default CallToAction;
 const styles = {
   callToAction: {
     mt: ['-90px', null, null, null, '0'],
-    py: ['50px', null, null, null, '110px', null, '140px'],
+    py: ['50px', null, null, null, '110px', null, '100px'],
   },
   flex: {
     flexWrap: 'wrap',
@@ -78,8 +78,8 @@ const styles = {
   button: {
     display: 'inline-block',
     verticalAlign: 'middle',
-    backgroundColor: '#02073E',
-    color: '#fff',
+    backgroundColor: 'secondary',
+    color: 'text_white',
     borderRadius: '5px',
     fontSize: '16px',
     fontWeight: 700,

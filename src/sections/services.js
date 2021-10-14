@@ -21,14 +21,14 @@ const SERVICES_DATA = [
     image: serviceImage2,
     text:
       "Lend out securities assets using Aave's cutting edge markets.",
-    heading: 'Lending',
+    heading: 'Lending (TBD)',
     path: 'https://app.aave.com/',
   },
   {
     image: serviceImage3,
     text:
     "Borrow against securities using Aave's cutting edge markets.",
-    heading: 'Borrowing',
+    heading: 'Borrowing TBD)',
     path: 'https://app.aave.com/',
   },
   {
@@ -49,7 +49,7 @@ const SERVICES_DATA = [
     image: serviceImage6,
     text:
     "Become part of the ecosystem. One DAO to rule them all.",
-    heading: 'DAO',
+    heading: 'DAO TBD)',
     path: '#',
   },
 ];
@@ -81,7 +81,7 @@ export default Services;
 
 const styles = {
   services: {
-    pt: ['80px', null, null, null, '80px', null, '100px'],
+    pt: ['80px', null, null, null, '80px', null, '150px'],
   },
   grid: {
     gridGap: '30px',

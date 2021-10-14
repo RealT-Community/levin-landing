@@ -4,8 +4,8 @@ import Head from 'next/head';
 
 
 export default function SEO({
-  description = 'defi + securities',
-  author = 'Levinswap',
+  description = 'sDeFi',
+  author = 'Levin',
   meta,
   title = 'levinswap landing',
 }) {

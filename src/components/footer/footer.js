@@ -1,9 +1,11 @@
 /** @jsx jsx */
 import React from 'react';
-import { jsx, Box, Text, Container } from 'theme-ui';
+import { jsx, Box, Text, Container, Flex } from 'theme-ui';
 import { Link } from 'components/link';
 import Logo from 'components/logo';
-import logoLight from 'assets/logo-light2.svg';
+import menuItems from 'components/header/header.data';
+import { Link as ScrollLink } from 'react-scroll';
+
 export default function Footer() {
   return (
     <Box as="footer" sx={styles.footer}>
@@ -15,7 +17,14 @@ export default function Footer() {
             flexDirection: ['column', null, null, null, null, 'row'],
           }}
         >
-          <Logo image={logoLight} />
+          <Text as="p"
+            sx={{
+              color: 'text_white',
+              fontSize: '18px',
+              paddingRight: '50px',
+            }}>
+            Levin
+            </Text>
           <Text
             as="p"
             sx={{
@@ -28,13 +37,22 @@ export default function Footer() {
             Copyright by {new Date().getFullYear()} Lightning DAO
           </Text>
         </Box>
-        <Box sx={styles.linksWrap}>
-          <Link path="/">Home</Link>
-          <Link path="/">Advertise</Link>
-          <Link path="/">Supports</Link>
-          <Link path="/">Marketing</Link>
-          <Link path="/">FAQ</Link>
-        </Box>
+        <Flex as="nav" sx={styles.nav}>
+            {menuItems.map(({ path, label }, i) => (
+              <ScrollLink
+                activeClass="active"
+                sx={styles.nav.navLink}
+                to={path}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                key={i}
+              >
+                {label}
+              </ScrollLink>
+            ))}
+          </Flex>
       </Container>
     </Box>
   );
@@ -75,5 +93,25 @@ const styles = {
       '&:hover': { opacity: 0.7 },
     },
     'a+a': { ml: ['15px', null, null, null, '35px'] },
+  },
+  nav: {
+    '@media screen and (max-width: 960px)': {
+      display: 'none',
+    },
+    navLink: {
+      fontSize: '16px',
+      color: 'text_white',
+      fontWeight: '400',
+      cursor: 'pointer',
+      lineHeight: '1.2',
+      mr: '48px',
+      transition: '500ms',
+      ':last-child': {
+        mr: '0',
+      },
+      '&:hover ': {
+        color: 'secondary',
+      },
+    },
   },
 };

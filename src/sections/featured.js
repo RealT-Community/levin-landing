@@ -41,7 +41,7 @@ const Featured = () => {
     }
   };
   return (
-    <Box as="section" sx={styles.featured}>
+    <Box as="section" id="featured" sx={styles.featured}>
       <Container sx={styles.container}>
         <BlockTitle
           title="All-in-One Dashboard"
@@ -110,13 +110,11 @@ const fadeIn = keyframes`
 
 const styles = {
   featured: {
-    pt: ['80px', null, null, null, '80px', null, '100px'],
     backgroundColor: '#F9FAFC',
   },
   container: {
     position: 'relative',
-    top: '150px',
-    mt: '-150px',
+    padding: '0px',
   },
   tabButtonTopWrapper: {
     overflowY: ['hidden', null, null, null, null, 'inherit'],

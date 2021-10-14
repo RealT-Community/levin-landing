@@ -40,8 +40,8 @@ const accordionData = [
 
 const FAQ = () => {
   return (
-    <Box as="section">
-      <Container>
+    <Box as="section" id="faq">
+      <Container sx={styles.container}>
         <BlockTitle
           title="Frequently Asked Questions"
         />
@@ -70,6 +70,11 @@ const FAQ = () => {
 export default FAQ;
 
 const styles = {
+  container: {
+    position: 'relative',
+    top: '100px',
+    paddingBottom: '100px',
+  },
   flex: {
     flexWrap: 'wrap',
     flexDirection: ['column', null, null, null, null, 'row-reverse'],
@@ -103,8 +108,8 @@ const styles = {
   askButton: {
     display: 'inline-block',
     verticalAlign: 'middle',
-    backgroundColor: '#02073E',
-    color: '#fff',
+    backgroundColor: 'secondary',
+    color: 'text_white',
     borderRadius: '5px',
     fontSize: '16px',
     fontWeight: 700,
