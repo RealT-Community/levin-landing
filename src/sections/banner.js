@@ -15,7 +15,6 @@ const Banner = () => {
           src={dot}
         />
         <Heading as="h2">Experience Traditional Finance with DeFi</Heading>
-        <Image src={bannerImage} sx={styles.bannerImage} alt="banner moc" />
       </Container>
     </Box>
   );
@@ -96,8 +95,7 @@ const styles = {
       width: '100%',
       maxWidth: ['100%', null, null, '55%', '500px', '640px', '851px'],
       mx: 'auto',
-      mt: '30px',
-      mb: ['40px', null, null, '65px'],
+      mt: '50px',
     },
   },
   logo: {

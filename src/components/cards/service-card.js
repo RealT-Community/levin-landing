@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Text, Heading, Image } from 'theme-ui';
 import arrowAngle from 'assets/arrow-angle.svg';
 
-const ServiceCard = ({ image, text, heading, path }) => {
+const ServiceCard_1 = ({ image, text, heading, path }) => {
   return (
     <Box sx={styles.serviceCard}>
       <Box sx={styles.image}>
@@ -19,7 +19,7 @@ const ServiceCard = ({ image, text, heading, path }) => {
   );
 };
 
-export default ServiceCard;
+export default ServiceCard_1;
 
 const styles = {
   serviceCard: {
