@@ -96,6 +96,7 @@ const styles = {
       maxWidth: ['100%', null, null, '55%', '500px', '640px', '851px'],
       mx: 'auto',
       mt: '50px',
+      mb: '75px'
     },
   },
   logo: {
@@ -119,7 +120,7 @@ const styles = {
   },
   dot: {
     width: '400px',
-    height: '400px',
+    height: '300px',
     left: '35%',
   },
 };

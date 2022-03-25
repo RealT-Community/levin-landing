@@ -57,7 +57,7 @@ const SERVICES_DATA_1 = [
 
 const SERVICES_DATA_2 = [
   {
-    heading: "131+",
+    heading: "150+",
     text:
       "Securities Assets Listed",
   },
@@ -110,7 +110,7 @@ export default Services;
 
 const styles = {
   services: {
-    pt: ['80px', null, null, null, '80px', null, '125px'],
+    pt: ['80px', null, null, null, '80px', null, '50px'],
   },
   grid: {
     gridGap: '30px',

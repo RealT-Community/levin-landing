@@ -6,7 +6,7 @@ import Image from 'components/image';
 import { FaHandHoldingUsd } from 'react-icons/fa';
 import { BiBitcoin } from 'react-icons/bi';
 import { GiWheat, GiMoneyStack } from 'react-icons/gi'
-import tabImage1 from 'assets/tab-image-1.png';
+import tabImage1 from 'assets/banner-mockup.png';
 import dotPattern from 'assets/dot-pattern.svg';
 
 const Featured = () => {
@@ -111,6 +111,7 @@ const fadeIn = keyframes`
 const styles = {
   featured: {
     backgroundColor: '#F9FAFC',
+    paddingTop: '50px'
   },
   container: {
     position: 'relative',
