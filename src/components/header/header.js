@@ -40,7 +40,7 @@ export default function Header({ className }) {
 
           <a
             target="_blank"
-            href="https://app.levinswap.org"
+            href="https://app.levinswap.realt.community"
             sx={styles.headerBtn}
             style={{textDecoration: 'none'}}
             variant="buttons.primary"
