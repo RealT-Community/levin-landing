@@ -20,7 +20,7 @@ const CallToAction = () => {
               and get the full DeFi experience with their securities tokens
               using various protocols.
             </Text>
-            <Link path="#" target="_blank" href="https://wiki.levinswap.org" sx={styles.button}>
+            <Link path="#" target="_blank" href="https://wiki.levinswap.realt.community" sx={styles.button}>
               Explore More
             </Link>
           </Box>

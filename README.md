@@ -14,4 +14,4 @@ Open [http://localhost:1234](http://localhost:1234) with your browser to see the
 
 ## Learn More
 
-Visit wiki.levinswap.org to learn more about the Levin ecosystem.
+Visit wiki.levinswap.realt.community to learn more about the Levin ecosystem.
