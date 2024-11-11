@@ -8,7 +8,7 @@ services:
       - traefik-realt
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.levinswap-landing.rule=Host(`levinswap.realt.community`)"
+      - "traefik.http.routers.levinswap-landing.rule=Host(`levinswap.realtoken.community`)"
       - "traefik.http.routers.levinswap-landing.entrypoints=websecure"
     restart: always
 
